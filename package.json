@@ -1,7 +1,7 @@
 {
   "name": "bower-list",
   "description": "A static list of bower packages",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/stefanbuck/bower-list",
   "bugs": "https://github.com/stefanbuck/bower-list/issues",
   "license": "MIT",
@@ -16,7 +16,9 @@
     "url": "https://github.com/stefanbuck/bower-list"
   },
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "json-requester": "^0.1.0"
+  },
   "devDependencies": {
     "coveralls": "^2.10.0",
     "gulp": "^3.6.2",
@@ -28,11 +30,7 @@
     "gulp-mocha": "^0.4.1",
     "gulp-plumber": "^0.6.2",
     "gulp-util": "2.2.16",
-    "jshint-stylish": "^0.2.0",
-    "lodash": "^2.4.1",
-    "request": "^2.37.0",
-    "should": "^3.3.1",
-    "sinon": "^1.10.3"
+    "jshint-stylish": "^0.2.0"
   },
   "scripts": {
     "coveralls": "gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",

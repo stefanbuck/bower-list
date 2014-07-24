@@ -10,4 +10,14 @@
 
 var bowerList = require('../');
 
-bowerList.awesome(); // "awesome"
+var options = {
+  filter: ['name', 'website']
+};
+
+bowerList(options, function(err, data) {
+  if(err) {
+    console.log(err);
+    return;
+  }
+  console.log(data);
+});
