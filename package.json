@@ -1,7 +1,7 @@
 {
   "name": "bower-list",
-  "description": "A static list of bower packages",
-  "version": "0.1.1",
+  "description": "Generates a list of bower packages ",
+  "version": "0.1.2",
   "homepage": "https://github.com/stefanbuck/bower-list",
   "bugs": "https://github.com/stefanbuck/bower-list/issues",
   "license": "MIT",
