@@ -1,7 +1,7 @@
 # bower-list 
 [![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-url]][daviddm-image]
 
-A static list of bower packages
+> Requests a list of bower packages with [json-requester](https://github.com/stefanbuck/json-requester)
 
 
 ## Install
@@ -20,12 +20,12 @@ var options = {
   filter: ['name', 'website']
 };
 bowerList(options, function(err, data) {
-  if(err) {
-    console.log(err);
-    return;
+  if (err) {
+    throw err;
   }
+
   console.log(data);
-  // [ { name: '10digit-validation', website: 'https://github.com/10digit/validation' },
+  // => [ { name: '10digit-validation', website: 'https://github.com/10digit/validation' },
   //   { name: '1140px-responsive-css-grid', website: 'https://github.com/aosmialowski/1140px-Responsive-CSS-Grid' },
   //   { name: '15puzzle', website: 'https://github.com/rupertqin/15puzzle' }
   // ]

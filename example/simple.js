@@ -15,9 +15,9 @@ var options = {
 };
 
 bowerList(options, function(err, data) {
-  if(err) {
-    console.log(err);
-    return;
+  if (err) {
+    throw err;
   }
+
   console.log(data);
 });
